@@ -1,6 +1,15 @@
-# Jcule-Builder
+# Jcule Builder
 
-Jcule-Builder is a visual application that allows you to create user interfaces from OpenAPI specifications using jellicule components. It provides a drag-and-drop interface for mapping API endpoints to UI components, creating a complete application without writing code.
+Jcule Builder is a visual application that allows you to create user interfaces from OpenAPI specifications using jellicule components. It provides a drag-and-drop interface for mapping API endpoints to UI components, creating a complete application without writing code.
+
+## Project Structure
+
+This project follows the WebAX standard layout:
+
+- `/app` - Application code and documentation
+- `/cicd` - CI/CD configuration
+- `/develop` - Development tools and configuration
+- `/dist` - Distribution files
 
 ## Features
 
@@ -14,35 +23,27 @@ Jcule-Builder is a visual application that allows you to create user interfaces 
 
 ### Prerequisites
 
-- Node.js 16 or higher
-- npm or yarn
+- Docker and Docker Compose
 
-### Installation
-
-1. Clone the repository:
+### Running the Application
 
 ```bash
-git clone https://github.com/webax/jcule-builder.git
-cd jcule-builder
+# Start the application
+docker-compose up
+
+# Access the application
+open http://localhost
 ```
 
-2. Install dependencies:
+### Development
 
 ```bash
-npm install
-# or
-yarn
+# Start the application in development mode
+docker-compose up
+
+# Make changes to the code in the /app directory
+# The application will automatically reload
 ```
-
-3. Start the development server:
-
-```bash
-npm start
-# or
-yarn start
-```
-
-4. Open your browser and navigate to `http://localhost:5173`
 
 ## Usage
 
@@ -76,7 +77,7 @@ Jcule-Builder follows a modular architecture with the following components:
 - **Preview Renderer**: Renders a live preview of the application
 - **Code Generator**: Generates a complete jcule application
 
-For more details, see the [Architecture Documentation](docs/ARCHITECTURE.md).
+For more details, see the [Architecture Documentation](app/docs/ARCHITECTURE.md).
 
 ## Contributing
 
