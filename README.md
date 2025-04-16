@@ -7,7 +7,7 @@ Jcule Builder is a visual application that allows you to create user interfaces 
 This project follows the WebAX standard layout:
 
 - `/app` - Application code and documentation
-- `/cicd` - CI/CD configuration
+- `/cicada` - Self-Contained Integrated Continuous Automatic Development, Testing, and Deployment Approach
 - `/develop` - Development tools and configuration
 - `/dist` - Distribution files
 
@@ -78,6 +78,20 @@ Jcule-Builder follows a modular architecture with the following components:
 - **Code Generator**: Generates a complete jcule application
 
 For more details, see the [Architecture Documentation](app/docs/ARCHITECTURE.md).
+
+## CICADA: Development, Testing, and Deployment
+
+This project uses CICADA (Self-Contained Integrated Continuous Automatic Development, Testing, and Deployment Approach) for its development lifecycle. CICADA is inspired by the metamorphosis of cicadas, representing the transformation of code from repository (grub) to deployed application (flying insect).
+
+### Key Components
+
+- **Initialization**: `./cicada/init/init.sh` - Sets up the project structure and dependencies
+- **Testing**: `./cicada/test/run-tests.sh` - Runs unit, integration, and end-to-end tests
+- **Building**: `./cicada/build/build.sh` - Builds the application for deployment
+- **Deployment**: `./cicada/deploy/deploy.sh` - Deploys the application to staging or production
+- **Monitoring**: `./cicada/monitor/monitor.sh` - Monitors the deployed application
+
+For more details, see the [CICADA Documentation](cicada/README.md).
 
 ## Contributing
 
