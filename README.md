@@ -77,7 +77,7 @@ Jcule-Builder follows a modular architecture with the following components:
 - **Preview Renderer**: Renders a live preview of the application
 - **Code Generator**: Generates a complete jcule application
 
-For more details, see the [Architecture Documentation](app/docs/ARCHITECTURE.md).
+For more details, see the [Architecture Documentation](app/docs/ARCHITECTURE.md) and the [UIxAAS Integration Documentation](docs/UIxAAS/README.md).
 
 ## CICADA: Development, Testing, and Deployment
 
